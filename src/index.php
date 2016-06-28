@@ -28,4 +28,19 @@ $app->get('/', function ($request, $response, $args)
     return $this->view->render($response, 'index.twig'); 
 });
 
+$app->get('/about', function ($request, $response, $args)
+{
+    return $this->view->render($response, 'about.twig'); 
+});
+
+$app->get('/contact', function ($request, $response, $args)
+{
+    return $this->view->render($response, 'contact.twig'); 
+});
+
+$app->get('/restaurant', function ($request, $response, $args)
+{
+    return $this->view->render($response, 'restaurant.twig'); 
+});
+
 $app->run();
