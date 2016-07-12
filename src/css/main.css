@@ -1,9 +1,28 @@
 
 body {
 	padding-top: 40px; 
+	background-color: #430102;
 }
 
 
 @media screen and (max-width: 768px) {
     body { padding-top: 40px; }
+}
+
+main {
+	margin-top : 20px;
+}
+
+footer, #navbar {
+	background-color : #3F0303;
+	color : #DBBD60;
+}
+
+#footerText{
+	padding-top : 5px;
+	
+}
+
+.golden{
+	color : #DBBD60;
 }
