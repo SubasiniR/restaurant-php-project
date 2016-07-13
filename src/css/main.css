@@ -1,7 +1,7 @@
 
 body {
 	padding-top: 40px; 
-	background-color: #430102;
+	background-color: #E5DFDF;
 }
 
 
@@ -14,8 +14,7 @@ main {
 }
 
 footer, #navbar {
-	background-color : #3F0303;
-	color : #DBBD60;
+	background-color : #E5DFDF;
 }
 
 #footerText{
@@ -23,6 +22,6 @@ footer, #navbar {
 	
 }
 
-.golden{
+/*.golden{
 	color : #DBBD60;
-}
+} */
