@@ -4,6 +4,8 @@ include("includes/header.php");
 include("connection.php")?>
 
 	<main class= "golden">
+	
+		<h3>Table Status</h3>
 		
 		<table class = "table table-bordered table-striped table-responsive">
 			

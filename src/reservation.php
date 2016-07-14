@@ -8,7 +8,7 @@ include("includes/header.php"); ?>
 		
 		<form method="post" action="process.php" class="form-horizontal">
 		  
-		<table class = "table"> 
+		<table class = "table table-responsive"> 
 		  		 
 		  <div class="form-group">
 			<tr>
