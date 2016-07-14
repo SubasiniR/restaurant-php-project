@@ -10,7 +10,8 @@ try{
 
 try{
 	$results = $db->query("SELECT * FROM TableStatus");
-	var_dump($results->fetchAll(PDO::FETCH_ASSOC));
+	$rows = $results->fetchAll(PDO::FETCH_ASSOC);
+	//var_dump($rows);
 } catch(Exception $e){
 	echo $e->getMessage();
 	exit;

@@ -4,18 +4,27 @@ include("includes/header.php");
 include("connection.php")?>
 
 	<main class= "golden">
-		<?php
-		echo "<table>";
-			foreach ($results as $row) {
-			   echo "<tr>";
-			   foreach ($row as $column) {
-				  echo "<td>$column</td>";
-			   }
-			   echo "</tr>";
-			}    
-			echo "</table>";
+		
+		<table class = "table table-bordered table-striped table-responsive">
 			
-		?>
+			<tr>
+				<th>#</th>
+				<th>Location</th>
+				<th>Chair Count</th>
+			</tr>
+			<?php
+				foreach ($rows as $row) {
+				   echo "<tr>";
+				   foreach ($row as $column) {
+					  echo "<td>$column</td>";
+				   }
+				   echo "</tr>";
+				}  
+			?>
+
+		</table>
+			
+		
 		
 	</main>
 	

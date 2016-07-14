@@ -22,6 +22,15 @@ footer, #navbar {
 	
 }
 
+.submit-btn{
+	margin-top : 15px;
+}
+
+.table-bordered{
+	border-color : #000;
+}
+
 /*.golden{
 	color : #DBBD60;
 } */
+
