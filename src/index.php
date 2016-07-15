@@ -13,14 +13,14 @@ include("includes/header.php"); ?>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox" style="width: 100%; height: 100%; margin: 0 auto">
-        <div class="item active">
-          <img class="first-slide" src="img/img1.JPG" alt="First slide">
+        <div class="item active slider-size">
+          <img class="first-slide center-block" src="img/img1.JPG" alt="First slide">
         </div>
-        <div class="item">
-          <img class="second-slide" src="img/img2.JPG" alt="Second slide" height="50">
+        <div class="item slider-size">
+          <img class="second-slide center-block" src="img/img2.JPG" alt="Second slide" height="50">
         </div>
-        <div class="item">
-          <img class="third-slide" src="img/img3.JPG" alt="Third slide">
+        <div class="item slider-size">
+          <img class="third-slide center-block" src="img/img3.JPG" alt="Third slide">
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
