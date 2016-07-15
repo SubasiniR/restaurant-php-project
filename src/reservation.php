@@ -1,6 +1,7 @@
 <?php 
 $pageTitle = "Make Reservations";
-include("includes/header.php"); ?>
+include("includes/header.php"); 
+include("connection.php")?>
 
 	<main>
 	
@@ -10,23 +11,23 @@ include("includes/header.php"); ?>
 		  
 		<table class = "table table-responsive"> 
 		  		 
-		  <div class="form-group">
+		  <div class="form-group required">
 			<tr>
 				<th><label for="name" class="col-md-4">Name</label></th>
-				<td><input class="form-control col-md-10" type="text" id="name" name="name" value="" /></td>
+				<td><input class="form-control col-md-10" type="text" id="name" name="name" value="" required="true"/></td>
 			</tr>
 		  <div> 
 		  
-		  <div class="form-group">
+		  <div class="form-group required">
 			<tr>
 				<th><label for="email" class="col-md-4">E-Mail ID</label></th>
-				<td><input class="form-control col-md-10" type="text" id="email" name="email" value="" /></td>
+				<td><input class="form-control col-md-10" type="email" id="email" name="email" value="" required="true" /></td>
 			</tr>
 		  <div> 
-		  <div class="form-group">
+		  <div class="form-group required">
 			  <tr>
 				<th><label for="time" class="col-md-4">Time</label></th>
-				<td><select class="form-control col-md-10" id="time">
+				<td><select class="form-control col-md-10" id="time" required="true">
 				  <option>6:30PM</option>
 				  <option>7:30PM</option>
 				  <option>8:30PM</option>
@@ -37,10 +38,10 @@ include("includes/header.php"); ?>
 				</select></td>
 			  </tr>
 		  <div> 
-		  <div class="form-group">
+		  <div class="form-group required">
 			  <tr>
 				<th><label for="count" class="col-md-4">Diner's Count</label></th>
-				<td><input class="form-control col-md-10" type="number" id="count" name="count" value="" /></td>
+				<td><input class="form-control col-md-10" type="number" min="1" max="12" id="count" name="count" value="" required="true" /></td>
 			  </tr>
 		  <div> 
 		  
@@ -48,26 +49,15 @@ include("includes/header.php"); ?>
 			  <tr>
 				<th><label for="tableNumber" class="col-md-4">Table Number</label></th>
 				<td><select class="form-control col-md-10" id="tableNumber">
-					  <option>1</option>
-					  <option>2</option>
-					  <option>3</option>
-					  <option>4</option>
-					  <option>5</option>
-					  <option>6</option>
-					  <option>7</option>
-					  <option>8</option>
-					  <option>9</option>
-					  <option>10</option>
-					  <option>11</option>
-					  <option>12</option>
-					  <option>13</option>
-					  <option>14</option>
-					  <option>15</option>
-					  <option>16</option>
-					  <option>17</option>
-					  <option>18</option>
-					  <option>19</option>
-					  <option>20</option>
+				<?php 
+					foreach ($opt as $row) {
+					   echo "<option>";
+					   foreach ($row as $column) {
+						  echo "$column";
+					   }
+					   echo "</option>";
+				}  
+				?>
 				</select></td>
 			  </tr>
 		  <div> 

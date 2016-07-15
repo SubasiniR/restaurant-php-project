@@ -16,3 +16,12 @@ try{
 	echo $e->getMessage();
 	exit;
 }
+
+try{
+	$option = $db->query("SELECT TableNumber FROM TableStatus");
+	$opt = $option->fetchAll(PDO::FETCH_ASSOC);
+	//var_dump($opt);
+} catch(Exception $e){
+	echo $e->getMessage();
+	exit;
+}
